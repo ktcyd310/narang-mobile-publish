@@ -1,10 +1,297 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
 
+<head>
+
+    <head>
+
+        <meta charset="utf-8">
+        <link rel="icon" href="/favicon.ico">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1">
+        <meta name="theme-color" content="#000000">
+        <meta name="description" content="휴대폰 정가 확인부터 견적서까지 바로 확인하세요. 통신 매장 가기전에 나랑살래">
+        <link rel="apple-touch-icon" href="/logo192.png">
+        <!--
+          manifest.json provides metadata used when your web app is installed on a
+          user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+        -->
+        <link rel="manifest" href="/manifest.json">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+            integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+        <!--
+          Notice the use of  in the tags above.
+          It will be replaced with the URL of the `public` folder during the build.
+          Only files inside the `public` folder can be referenced from the HTML.
+    
+          Unlike "/favicon.ico" or "favicon.ico", "/favicon.ico" will
+          work correctly both with client-side routing and a non-root public URL.
+          Learn how to configure a non-root public URL by running `npm run build`.
+        -->
+
+        <!-- Google Tag Manager -->
+        <script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script>
+        <script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-T2KGLPC"></script>
+        <script>
+            (function (w, d, s, l, i) {
+                w[l] = w[l] || [];
+                w[l].push({
+                    'gtm.start': new Date().getTime(),
+                    event: 'gtm.js'
+                });
+                var f = d.getElementsByTagName(s)[0],
+                    j = d.createElement(s),
+                    dl = l != 'dataLayer' ? '&l=' + l : '';
+                j.async = true;
+                j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+                f.parentNode.insertBefore(j, f);
+            })(window, document, 'script', 'dataLayer', 'GTM-T2KGLPC');
+        </script>
+        <!-- End Google Tag Manager -->
+
+        <script type="text/javascript"
+            src="//dapi.kakao.com/v2/maps/sdk.js?appkey=bb911a165958ae1b708fe184b175a422&amp;libraries=services">
+        </script>
+        <script charset="UTF-8" src="https://t1.daumcdn.net/mapjsapi/js/main/4.4.1/kakao.js"></script>
+        <script charset="UTF-8" src="https://t1.daumcdn.net/mapjsapi/js/libs/services/1.0.2/services.js"></script>
+
+
+        <title>나랑살래</title>
+        <script charset="utf-8" src="/static/js/5.chunk.js"></script>
+    </head>
+    <link rel="stylesheet" type="text/css" href="/src/assets/css/style.css">
+    <script src="/src/pages/includeHTML.js"></script>
+</head>
+
+<body>
+    <div id="root">
+        <header include-html="/src/pages/header.html"></header>
+
+        <div class="space-y--15"></div>
+
+
+        <div class="d-flex justify-content-center">
+            <div class="col-md-8 col-lg-5">
+                <div class="body-wrapper space-pt--100 space-pb--120">
+                    <div class="container space-y--30"></div>
+                    <div
+                        style="text-align: center; background-color: rgb(249, 249, 249); font-size: small;padding: 10px;">
+                        <span>아래
+                            정보는
+                        </span><span style="color: rgb(15, 76, 129); font-weight: bold;">통신 3사 공식 홈페이지 정가
+                        </span><span>입니다.</span><br><span>휴대폰 정가 확인부터 견적서까지, 바로 확인하세요.</span></div>
+                    <div class="shop-header bg-color--white">
+                        <div class="container space-y--15">
+                            <div class="row align-items-center">
+                                <div class="col"><button class="filter-trigger-button" id="filter-trigger">
+                                        <div>
+                                            <div><svg xmlns="http://www.w3.org/2000/svg" width="13.322" height="14.274"
+                                                    viewBox="0 0 13.322 14.274" class="injected-svg"
+                                                    data-src="assets/img/icons/list.svg"
+                                                    xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                    <g transform="translate(-357 -58.429)">
+                                                        <g transform="translate(357 58.429)">
+                                                            <g transform="translate(4.903 6.723)">
+                                                                <g transform="translate(0)">
+                                                                    <path
+                                                                        d="M137.453,161.8h-7.588a.416.416,0,1,0,0,.831h7.588a.416.416,0,0,0,0-.831Z"
+                                                                        transform="translate(-129.45 -161.8)"></path>
+                                                                </g>
+                                                            </g>
+                                                            <g transform="translate(0 5.207)">
+                                                                <g transform="translate(0)">
+                                                                    <path
+                                                                        d="M13.382,125.3a1.932,1.932,0,1,0,1.932,1.932A1.931,1.931,0,0,0,13.382,125.3Zm0,3.033a1.1,1.1,0,1,1,1.1-1.1A1.1,1.1,0,0,1,13.382,128.333Z"
+                                                                        transform="translate(-11.45 -125.3)"></path>
+                                                                </g>
+                                                            </g>
+                                                            <g transform="translate(4.903 1.529)">
+                                                                <g transform="translate(0)">
+                                                                    <path
+                                                                        d="M137.453,36.8h-7.588a.416.416,0,0,0,0,.831h7.588a.416.416,0,0,0,0-.831Z"
+                                                                        transform="translate(-129.45 -36.8)"></path>
+                                                                </g>
+                                                            </g>
+                                                            <g transform="translate(0)">
+                                                                <g transform="translate(0)">
+                                                                    <path
+                                                                        d="M13.382,0a1.932,1.932,0,1,0,1.932,1.932A1.931,1.931,0,0,0,13.382,0Zm0,3.038a1.1,1.1,0,1,1,1.1-1.1A1.1,1.1,0,0,1,13.382,3.038Z"
+                                                                        transform="translate(-11.45)"></path>
+                                                                </g>
+                                                            </g>
+                                                            <g transform="translate(4.903 11.918)">
+                                                                <g transform="translate(0)">
+                                                                    <path
+                                                                        d="M137.453,286.8h-7.588a.416.416,0,0,0,0,.831h7.588a.416.416,0,0,0,0-.831Z"
+                                                                        transform="translate(-129.45 -286.8)"></path>
+                                                                </g>
+                                                            </g>
+                                                            <g transform="translate(0 10.409)">
+                                                                <g transform="translate(0)">
+                                                                    <path
+                                                                        d="M13.382,250.5a1.932,1.932,0,1,0,1.932,1.932A1.931,1.931,0,0,0,13.382,250.5Zm0,3.038a1.1,1.1,0,1,1,1.1-1.1A1.1,1.1,0,0,1,13.382,253.538Z"
+                                                                        transform="translate(-11.45 -250.5)"></path>
+                                                                </g>
+                                                            </g>
+                                                        </g>
+                                                    </g>
+                                                </svg></div>
+                                        </div>
+                                        <div class="filter-text">요금제: </div>
+                                        <div class="filter-text" id="filter-text">8~9.9만원</div>
+                                    </button></div>
+                                <div class="col"><button class="filter-trigger-button" id="filter-trigger">
+                                        <div>
+                                            <div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                    viewBox="0 0 24 24" fill="none" stroke="#000" stroke-width="2"
+                                                    stroke-linecap="round" stroke-linejoin="round" class="injected-svg"
+                                                    data-src="assets/img/icons/filter.svg"
+                                                    xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                    <polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3">
+                                                    </polygon>
+                                                </svg></div>
+                                        </div>
+                                        <div class="filter-text">필터</div>
+                                    </button></div>
+                            </div>
+                        </div>
+                        <div class="subscription-filter" id="subscription-menu">
+                            <div class="container space-mt--15 space-mb--10">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="subscription-filter-block">
+                                            <h4 class="subscription-filter-block__title space-mb--15">5G 요금제 가격대</h4>
+                                            <div class="subscription-filter-block__content">
+                                                <ul class="subscription-filter-block__category">
+                                                    <li><button id="subscription-filter-button">~5.5만원</button></li>
+                                                    <li><button id="subscription-filter-button">5.6~7.9만원</button></li>
+                                                    <li><button id="subscription-filter-button"
+                                                            class="active">8~9.9만원</button>
+                                                    </li>
+                                                    <li><button id="subscription-filter-button">10만원~</button></li>
+                                                </ul>
+                                            </div>
+                                            <h4 class="subscription-filter-block__title space-mb--15">LTE 요금제 가격대</h4>
+                                            <div class="subscription-filter-block__content">
+                                                <ul class="subscription-filter-block__category">
+                                                    <li><button id="subscription-filter-button">~3.4만원</button></li>
+                                                    <li><button id="subscription-filter-button">3.5~4.8만원</button></li>
+                                                    <li><button id="subscription-filter-button">4.9~6.8만원</button></li>
+                                                    <li><button id="subscription-filter-button">6.9~8.8만원</button></li>
+                                                    <li><button id="subscription-filter-button">8.9만원~</button></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="shop-filter" id="shop-filter-menu" style="overflow: visible; height: 56px;">
+                            <div class="container space-mt--15 space-mb--10">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="shop-filter-block space-mb--25">
+                                            <div class="shop-filter-block__content">
+                                                <div class="shop-filter-1depth">
+                                                    <div class="dropdown-button dropdown"><button aria-haspopup="true"
+                                                            aria-expanded="false" id="product-filter-button"
+                                                            type="button"
+                                                            class="dropdown-toggle btn btn-primary btn-sm">제조사
+                                                            전체</button></div>
+                                                    <div class="dropdown-button dropdown"><button aria-haspopup="true"
+                                                            aria-expanded="false" id="product-filter-button"
+                                                            type="button"
+                                                            class="dropdown-toggle btn btn-primary btn-sm">공시지원</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="shop-products-area">
+                            <div class="shop-layout-switcher text-right space-mt--15 space-mb--15">
+                                <div class="container">
+                                    <div class="dropdown-container">
+                                        <div class="btn-primary dropdown"><button aria-haspopup="true"
+                                                aria-expanded="false" type="button"
+                                                class="dropdown-toggle btn btn-primary btn-sm">정렬</button></div>
+                                        <div class="list-count">총 42개</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="shop-list-products-wrapper d-block">
+                                <div class="container">
+                                    <div class="list-product"><span class="thumb"><img
+                                                src="https://narang-image.s3.ap-northeast-2.amazonaws.com/SM-G998N.jpg"
+                                                class="thumb__image" alt=""></span>
+                                        <div class="list-product__content">
+                                            <h3 class="title">갤럭시 S21 Ultra 256G</h3>
+                                            <h5 class="description">월 납부금 (24개월 할부)</h5>
+                                            <div class="category">
+                                                <div class="price"><img src="/assets/img/icons/icon_skt.png" class="img"
+                                                        alt=""><span class="text">130,376원</span></div>
+                                                <div class="price"><img src="/assets/img/icons/icon_kt.png" class="img"
+                                                        alt=""><span class="text">119,848원</span></div>
+                                                <div class="price"><img src="/assets/img/icons/icon_lgu.png" class="img"
+                                                        alt=""><span class="text">123,830원</span></div>
+                                            </div>
+                                            <p></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="container">
+                                    <div class="list-product"><span class="thumb"><img
+                                                src="https://narang-image.s3.ap-northeast-2.amazonaws.com/SM-G998N.jpg"
+                                                class="thumb__image" alt=""></span>
+                                        <div class="list-product__content">
+                                            <h3 class="title">갤럭시 S21 Ultra 512G</h3>
+                                            <h5 class="description">월 납부금 (24개월 할부)</h5>
+                                            <div class="category">
+                                                <div class="price"><img src="/assets/img/icons/icon_skt.png" class="img"
+                                                        alt=""><span class="text">136,902원</span></div>
+                                                <div class="price"><img src="/assets/img/icons/icon_kt.png" class="img"
+                                                        alt=""><span class="text">126,374원</span></div>
+                                                <div class="price"><img src="/assets/img/icons/icon_lgu.png" class="img"
+                                                        alt=""><span class="text">130,356원</span></div>
+                                            </div>
+                                            <p></p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="container">
+                                    <div class="list-product"><span class="thumb"><img
+                                                src="https://narang-image.s3.ap-northeast-2.amazonaws.com/SM-G991N.jpg"
+                                                class="thumb__image" alt=""></span>
+                                        <div class="list-product__content">
+                                            <h3 class="title">갤럭시 S21</h3>
+                                            <h5 class="description">월 납부금 (24개월 할부)</h5>
+                                            <div class="category">
+                                                <div class="price"><img src="/assets/img/icons/icon_skt.png" class="img"
+                                                        alt=""><span class="text">110,359원</span></div>
+                                                <div class="price"><img src="/assets/img/icons/icon_kt.png" class="img"
+                                                        alt=""><span class="text">103,904원</span></div>
+                                                <div class="price"><img src="/assets/img/icons/icon_lgu.png" class="img"
+                                                        alt=""><span class="text">103,813원</span></div>
+                                            </div>
+                                            <p></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<footer include-html="/src/pages/footer.html"></footer>
 </body>
+<script>
+    includeHTML();
+</script>
+
+
 </html>

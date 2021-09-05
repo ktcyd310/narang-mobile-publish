@@ -16604,7 +16604,7 @@
 
         .img-fluid-pointer {
             max-width: 100%;
-
+            max-height:30px;
             height: min-content;
             width: 16Px;
             padding-top: 15px;
@@ -19449,7 +19449,6 @@
         }
 
 
-
         # Navigation Menu --------------------------------------------------------------*/
 
         /**
@@ -19542,6 +19541,7 @@
             text-decoration: underline #0F4C81;
             text-underline-position: under;
         }
+
 
         .navbar .getstarted {
             background: #0F4C81;
@@ -19834,7 +19834,7 @@
             }
 
             .omd-img {
-                background-image: url(/src/assets/img/icons/OmdDark.svg);
+                background-image: url(../img/icons/OmdDark.svg);
                 /*text-align: center;*/
 
                 display: inline-block;
@@ -19846,11 +19846,14 @@
             }
 
             .active .omd-img {
-                background-image: url(/src/assets/img/icons/OmdActive.svg);
+                background-image: url(../img/icons/InfoActive.svg);
             }
 
+            .omd-img .active {
+                background-image: url(../img/icons/InfoActive.svg);
+            }
             .store-img {
-                background-image: url(/src/assets/img/icons/StoreDark.svg);
+                background-image: url(../img/icons/StoreDark.svg);
                 /*text-align: center;*/
                 display: inline-block;
                 background-size: 32px;
@@ -19860,11 +19863,11 @@
             }
 
             .active .store-img {
-                background-image: url(/src/assets/img/icons/StoreActive.svg);
+                background-image: url(../img/img/icons/StoreActive.svg);
             }
 
             .info-img {
-                background-image: url(/src/assets/img/icons/InfoDark.svg);
+                background-image: url(../img/icons/InfoDark.svg);
                 /*text-align: center;*/
                 display: inline-block;
                 background-size: 27px;
@@ -19874,7 +19877,7 @@
             }
 
             .active .info-img {
-                background-image: url(/src/assets/img/icons/InfoActive.svg);
+                background-image: url(../img/img/icons/InfoActive.svg);
             }
 
             .mobile-nav-a {

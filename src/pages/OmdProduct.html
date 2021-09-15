@@ -57,23 +57,65 @@
 
     <title>나랑살래</title>
 
- 
-    
+
+
     <script charset="utf-8" src="/static/js/10.chunk.js"></script>
-    <link rel="stylesheet" type="text/css" href="/src/assets/css/style.css">
-    <script src="/src/pages/includeHTML.js"></script>
+    <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+    <script src="../pages/includeHTML.js"></script>
+    <script>
+        (function () {
+            var w = window;
+            if (w.ChannelIO) {
+                return (window.console.error || window.console.log || function () {})(
+                    'ChannelIO script included twice.');
+            }
+            var ch = function () {
+                ch.c(arguments);
+            };
+            ch.q = [];
+            ch.c = function (args) {
+                ch.q.push(args);
+            };
+            w.ChannelIO = ch;
+
+            function l() {
+                if (w.ChannelIOInitialized) {
+                    return;
+                }
+                w.ChannelIOInitialized = true;
+                var s = document.createElement('script');
+                s.type = 'text/javascript';
+                s.async = true;
+                s.src = 'https://cdn.channel.io/plugin/ch-plugin-web.js';
+                s.charset = 'UTF-8';
+                var x = document.getElementsByTagName('script')[0];
+                x.parentNode.insertBefore(s, x);
+            }
+            if (document.readyState === 'complete') {
+                l();
+            } else if (window.attachEvent) {
+                window.attachEvent('onload', l);
+            } else {
+                window.addEventListener('DOMContentLoaded', l, false);
+                window.addEventListener('load', l, false);
+            }
+        })();
+        ChannelIO('boot', {
+            "pluginKey": "8cf05074-ca7e-4ed5-8057-72279b7b0e3c" //please fill with your plugin key
+        });
+    </script>
 </head>
 
 <body>
     <div id="root">
-        <header include-html="/src/pages/header.html"></header>
-        <div class="container space-y--10"></div>
+        <header include-html="../pages/header.html"></header>
+        <div class="container space-y--15"></div>
         <div class="d-flex justify-content-center">
             <div class="col-md-8 col-lg-5">
                 <div class="body-wrapper space-pt--70 space-pb--120">
                     <div class="detail-img-container"><img
                             src="https://narang-image.s3.ap-northeast-2.amazonaws.com/IPHONE12_PRO_MAX_GOLD.jpg"
-                            class="img-fluid" alt=""/></div>
+                            class="img-fluid" alt="" /></div>
                     <div class="product-content-header-area border-bottom--thick space-pb--22">
                         <div class="container">
                             <div class="row">
@@ -121,11 +163,11 @@
                     <div
                         style="background-color: rgb(249, 249, 249); font-size: small; margin: 20px 2px; padding: 8px;">
                         <span style="color: rgb(0, 0, 0); font-weight: bold;">매일 바뀌는 가격을 확인하세요! </span><br><span
-                            style="font-size: 12px;">지금 나랑살래에서 자급제 핸드폰 가격 비교하고 <br>동네매장 대비<strong
-                                style="color: rgb(15, 76, 129);">최대 162,628원</strong> 저렴하게 구매하세요</span></div>
+                            style="font-size: 12px;">지금 나랑살래에서 자급제 핸드폰 가격 비교하고 <br><strong
+                                style="color: rgb(15, 76, 129);">오늘 11:54 기준</strong> 가장 저렴하게 구매하세요</spanstyle=>
+                    </div>
                     <div class="container space-y--10"></div>
-                    <span style="color: rgb(0, 0, 0); font-weight: bold;margin-left: 15px;">실시간 자급제
-                        최저가</span>
+                    <span style="color: rgb(0, 0, 0); font-weight: bold;margin-left: 15px;">실시간 자급제 최저가</span>
                     <div class="container space-y--10"></div>
                     <div class="omd-detail-container-wrap">
                         <div class="omd-detail-container">
@@ -133,8 +175,8 @@
                                 <div class="col">
                                     <div class="">
                                         <div class="d-flex justify-content-between">
-                                            <div class="logo-image"><img src="/src/assets/img/icons/11st_logo.png"
-                                                    class="img-fluid-logo" alt=""/></div>
+                                            <div class="logo-image"><img src="../assets/img/icons/11st_logo.png"
+                                                    class="img-fluid-logo" alt="" /></div>
                                             <div class="row-list">
                                                 <div class="row-big">카드할인</div>
                                                 <div class="row-small"> 신한,삼성,현대국민,롯데,하나,농협,우리</div>
@@ -142,8 +184,8 @@
                                             <div class=" row-list">
                                                 <div class="row-big">1,314,180원 </div>
                                                 <div class="row-small"> 에어팟 할인</div>
-                                            </div><img src="/src/assets/img/pointer.png" class="img-fluid-pointer"
-                                                alt=""/>
+                                            </div><img src="../assets/img/icons/pointer.png" class="img-fluid-pointer"
+                                                alt="" />
                                         </div>
                                     </div>
                                 </div>
@@ -154,8 +196,8 @@
                                 <div class="col">
                                     <div class="">
                                         <div class="d-flex justify-content-between">
-                                            <div class="logo-image"><img src="/src/assets/img/icons/Coupang_logo.png"
-                                                    class="img-fluid-logo" alt=""/></div>
+                                            <div class="logo-image"><img src="../assets/img/icons/Coupang_logo.png"
+                                                    class="img-fluid-logo" alt="" /></div>
                                             <div class="row-list">
                                                 <div class="row-big">카드할인</div>
                                                 <div class="row-small"> 기본 할인</div>
@@ -163,8 +205,8 @@
                                             <div class=" row-list">
                                                 <div class="row-big">1,383,300원 </div>
                                                 <div class="row-small"> 에어팟 할인</div>
-                                            </div><img src="/assets/img/icons/pointer.png" class="img-fluid-pointer"
-                                                alt=""/>
+                                            </div><img src="../assets/img/icons/pointer.png" class="img-fluid-pointer"
+                                                alt="" />
                                         </div>
                                     </div>
                                 </div>
@@ -175,8 +217,8 @@
                                 <div class="col">
                                     <div class="">
                                         <div class="d-flex justify-content-between">
-                                            <div class="logo-image"><img src="/src/assets/img/icons/Himart_logo.png"
-                                                    class="img-fluid-logo" alt=""/></div>
+                                            <div class="logo-image"><img src="../assets/img/icons/Himart_logo.png"
+                                                    class="img-fluid-logo" alt="" /></div>
                                             <div class="row-list">
                                                 <div class="row-big">카드할인</div>
                                                 <div class="row-small"> 삼성,하나 할인</div>
@@ -184,8 +226,8 @@
                                             <div class=" row-list">
                                                 <div class="row-big">1,415,500원 </div>
                                                 <div class="row-small"> 에어팟 할인</div>
-                                            </div><img src="/assets/img/icons/pointer.png" class="img-fluid-pointer"
-                                                alt=""/>
+                                            </div><img src="../assets/img/icons/pointer.png" class="img-fluid-pointer"
+                                                alt="" />
                                         </div>
                                     </div>
                                 </div>
@@ -196,8 +238,8 @@
                                 <div class="col">
                                     <div class="">
                                         <div class="d-flex justify-content-between">
-                                            <div class="logo-image"><img src="/src/assets/img/icons/11st_logo.png"
-                                                    class="img-fluid-logo" alt=""/></div>
+                                            <div class="logo-image"><img src="../assets/img/icons/11st_logo.png"
+                                                    class="img-fluid-logo" alt="" /></div>
                                             <div class="row-list">
                                                 <div class="row-big">카드할인</div>
                                                 <div class="row-small"> 기본</div>
@@ -205,8 +247,8 @@
                                             <div class=" row-list">
                                                 <div class="row-big">1,460,200원 </div>
                                                 <div class="row-small"> 에어팟 할인</div>
-                                            </div><img src="/assets/img/icons/pointer.png" class="img-fluid-pointer"
-                                                alt=""/>
+                                            </div><img src="../assets/img/icons/pointer.png" class="img-fluid-pointer"
+                                                alt="" />
                                         </div>
                                     </div>
                                 </div>
@@ -217,8 +259,8 @@
                                 <div class="col">
                                     <div class="">
                                         <div class="d-flex justify-content-between">
-                                            <div class="logo-image"><img src="/src/assets/img/icons/Himart_logo.png"
-                                                    class="img-fluid-logo" alt=""/></div>
+                                            <div class="logo-image"><img src="../assets/img/icons/Himart_logo.png"
+                                                    class="img-fluid-logo" alt="" /></div>
                                             <div class="row-list">
                                                 <div class="row-big">카드할인</div>
                                                 <div class="row-small"> 기본</div>
@@ -226,8 +268,8 @@
                                             <div class=" row-list">
                                                 <div class="row-big">1,490,000원 </div>
                                                 <div class="row-small"> 에어팟 할인</div>
-                                            </div><img src="/assets/img/icons/pointer.png" class="img-fluid-pointer"
-                                                alt=""/>
+                                            </div><img src="../assets/img/icons/pointer.png" class="img-fluid-pointer"
+                                                alt="" />
                                         </div>
                                     </div>
                                 </div>
@@ -236,7 +278,25 @@
                     </div>
                     <div class="container space-y--10"></div>
                     <span style="color: rgb(0, 0, 0); font-weight: bold;margin-left: 15px;">빅데이터 예상 중고가격</span>
-                    <div class="container space-y--10"></div>
+                    <div class="container space-mt--10">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="shop-filter-block space-mt--10">
+                                    <div class="shop-filter-block__content">
+                                        <div class="shop-filter-1depth">
+                                            <div class="dropdown-button dropdown">
+                                                <button aria-haspopup="true"
+                                                    aria-expanded="false" id="product-filter-button" type="button"
+                                                    class="dropdown-toggle btn btn-primary btn-sm" style="font-size: 13px;color: rgb(85, 83, 83);background-color: rgb(249, 249, 249);border-color: rgb(249, 249, 249);">1년 후</button>
+                                            </div>
+                                            <div class="row-small" style="margin-top: 5px;font-size: 11px;">출시후 350일 경과</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                     <div class="omd-detail-container-wrap"
                         style="background-color: rgb(249, 249, 249); font-size: small; margin-bottom: 2px; padding: 1px;">
                         <div class="usedPhone-detail-container">
@@ -244,8 +304,8 @@
                                 <div class="col">
                                     <div class="">
                                         <div class="d-flex justify-content-between">
-                                            <div class="logo-image"><img src="/src/assets/img/icons/A_Grade.png"
-                                                    class="image-fluid-logo" alt=""/></div>
+                                            <div class="logo-image"><img src="../assets/img/icons/A_Grade.png"
+                                                    class="image-fluid-logo" alt="" /></div>
                                             <div class="row-list">
                                                 <div class="row-big"> 관리최상</div>
                                                 <div class="row-small">액정/뒷판 미세 흠집</div>
@@ -254,7 +314,7 @@
                                                 <div class="row-big"> 972,000원 </div>
                                                 <div class="row-small"></div>
                                             </div><img src="" class="img-fluid" alt=""
-                                                style="width: 16px; height: fit-content; padding-top: 15px;"/>
+                                                style="width: 16px; height: fit-content; padding-top: 15px;" />
                                         </div>
                                     </div>
                                 </div>
@@ -265,8 +325,8 @@
                                 <div class="col">
                                     <div class="">
                                         <div class="d-flex justify-content-between">
-                                            <div class="logo-image"><img src="/src/assets/img/icons/B_Grade.png"
-                                                    class="image-fluid-logo" alt=""/></div>
+                                            <div class="logo-image"><img src="../assets/img/icons/B_Grade.png"
+                                                    class="image-fluid-logo" alt="" /></div>
                                             <div class="row-list">
                                                 <div class="row-big"> 관리적당</div>
                                                 <div class="row-small">액정/뒷판 미세흠집, 녹음어플장애, 카메라멍</div>
@@ -286,8 +346,8 @@
                                 <div class="col">
                                     <div class="">
                                         <div class="d-flex justify-content-between">
-                                            <div class="logo-image"><img src="/src/assets/img/icons/C_Grade.png"
-                                                    class="image-fluid-logo" alt=""/></div>
+                                            <div class="logo-image"><img src="../assets/img/icons/C_Grade.png"
+                                                    class="image-fluid-logo" alt="" /></div>
                                             <div class="row-list">
                                                 <div class="row-big"> 아차차</div>
                                                 <div class="row-small">액정/뒷판 파손, 강잔상,GPS오류, LCD백화 등</div>
@@ -296,7 +356,7 @@
                                                 <div class="row-big"> 583,000원 </div>
                                                 <div class="row-small"></div>
                                             </div><img src="" class="img-fluid" alt=""
-                                                style="width: 16px; height: fit-content; padding-top: 15px;"/>
+                                                style="width: 16px; height: fit-content; padding-top: 15px;" />
                                         </div>
                                     </div>
                                 </div>
@@ -307,8 +367,8 @@
                                 <div class="col">
                                     <div class="">
                                         <div class="d-flex justify-content-between">
-                                            <div class="logo-image"><img src="/src/assets/img/icons/D_Grade.png"
-                                                    class="image-fluid-logo" alt=""/></div>
+                                            <div class="logo-image"><img src="../assets/img/icons/D_Grade.png"
+                                                    class="image-fluid-logo" alt="" /></div>
                                             <div class="row-list">
                                                 <div class="row-big"> 신경안씀</div>
                                                 <div class="row-small">C등급 기준 +베젤 휨, LCD잔상 등</div>
@@ -317,7 +377,7 @@
                                                 <div class="row-big"> 340,000원 </div>
                                                 <div class="row-small"></div>
                                             </div><img src="" class="img-fluid" alt=""
-                                                style="width: 16px; height: fit-content; padding-top: 15px;"/>
+                                                style="width: 16px; height: fit-content; padding-top: 15px;" />
                                         </div>
                                     </div>
                                 </div>
@@ -328,10 +388,11 @@
             </div>
         </div>
     </div>
-<footer include-html="/src/pages/footer.html"></footer>
+    <footer include-html="../pages/footer.html"></footer>
 </body>
 <script>
     includeHTML();
 </script>
+
 
 </html>

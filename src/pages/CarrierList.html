@@ -59,13 +59,55 @@
         <title>나랑살래</title>
         <script charset="utf-8" src="/static/js/5.chunk.js"></script>
     </head>
-    <link rel="stylesheet" type="text/css" href="/src/assets/css/style.css">
-    <script src="/src/pages/includeHTML.js"></script>
+    <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+    <script src="../pages/includeHTML.js"></script>
+    <script>
+        (function () {
+            var w = window;
+            if (w.ChannelIO) {
+                return (window.console.error || window.console.log || function () {})(
+                    'ChannelIO script included twice.');
+            }
+            var ch = function () {
+                ch.c(arguments);
+            };
+            ch.q = [];
+            ch.c = function (args) {
+                ch.q.push(args);
+            };
+            w.ChannelIO = ch;
+
+            function l() {
+                if (w.ChannelIOInitialized) {
+                    return;
+                }
+                w.ChannelIOInitialized = true;
+                var s = document.createElement('script');
+                s.type = 'text/javascript';
+                s.async = true;
+                s.src = 'https://cdn.channel.io/plugin/ch-plugin-web.js';
+                s.charset = 'UTF-8';
+                var x = document.getElementsByTagName('script')[0];
+                x.parentNode.insertBefore(s, x);
+            }
+            if (document.readyState === 'complete') {
+                l();
+            } else if (window.attachEvent) {
+                window.attachEvent('onload', l);
+            } else {
+                window.addEventListener('DOMContentLoaded', l, false);
+                window.addEventListener('load', l, false);
+            }
+        })();
+        ChannelIO('boot', {
+            "pluginKey": "8cf05074-ca7e-4ed5-8057-72279b7b0e3c" //please fill with your plugin key
+        });
+    </script>
 </head>
 
 <body>
     <div id="root">
-        <header include-html="/src/pages/header.html"></header>
+        <header include-html="../pages/header.html"></header>
 
         <div class="space-y--15"></div>
 
@@ -84,59 +126,7 @@
                         <div class="container space-y--15">
                             <div class="row align-items-center">
                                 <div class="col"><button class="filter-trigger-button" id="filter-trigger">
-                                        <div>
-                                            <div><svg xmlns="http://www.w3.org/2000/svg" width="13.322" height="14.274"
-                                                    viewBox="0 0 13.322 14.274" class="injected-svg"
-                                                    data-src="assets/img/icons/list.svg"
-                                                    xmlns:xlink="http://www.w3.org/1999/xlink">
-                                                    <g transform="translate(-357 -58.429)">
-                                                        <g transform="translate(357 58.429)">
-                                                            <g transform="translate(4.903 6.723)">
-                                                                <g transform="translate(0)">
-                                                                    <path
-                                                                        d="M137.453,161.8h-7.588a.416.416,0,1,0,0,.831h7.588a.416.416,0,0,0,0-.831Z"
-                                                                        transform="translate(-129.45 -161.8)"></path>
-                                                                </g>
-                                                            </g>
-                                                            <g transform="translate(0 5.207)">
-                                                                <g transform="translate(0)">
-                                                                    <path
-                                                                        d="M13.382,125.3a1.932,1.932,0,1,0,1.932,1.932A1.931,1.931,0,0,0,13.382,125.3Zm0,3.033a1.1,1.1,0,1,1,1.1-1.1A1.1,1.1,0,0,1,13.382,128.333Z"
-                                                                        transform="translate(-11.45 -125.3)"></path>
-                                                                </g>
-                                                            </g>
-                                                            <g transform="translate(4.903 1.529)">
-                                                                <g transform="translate(0)">
-                                                                    <path
-                                                                        d="M137.453,36.8h-7.588a.416.416,0,0,0,0,.831h7.588a.416.416,0,0,0,0-.831Z"
-                                                                        transform="translate(-129.45 -36.8)"></path>
-                                                                </g>
-                                                            </g>
-                                                            <g transform="translate(0)">
-                                                                <g transform="translate(0)">
-                                                                    <path
-                                                                        d="M13.382,0a1.932,1.932,0,1,0,1.932,1.932A1.931,1.931,0,0,0,13.382,0Zm0,3.038a1.1,1.1,0,1,1,1.1-1.1A1.1,1.1,0,0,1,13.382,3.038Z"
-                                                                        transform="translate(-11.45)"></path>
-                                                                </g>
-                                                            </g>
-                                                            <g transform="translate(4.903 11.918)">
-                                                                <g transform="translate(0)">
-                                                                    <path
-                                                                        d="M137.453,286.8h-7.588a.416.416,0,0,0,0,.831h7.588a.416.416,0,0,0,0-.831Z"
-                                                                        transform="translate(-129.45 -286.8)"></path>
-                                                                </g>
-                                                            </g>
-                                                            <g transform="translate(0 10.409)">
-                                                                <g transform="translate(0)">
-                                                                    <path
-                                                                        d="M13.382,250.5a1.932,1.932,0,1,0,1.932,1.932A1.931,1.931,0,0,0,13.382,250.5Zm0,3.038a1.1,1.1,0,1,1,1.1-1.1A1.1,1.1,0,0,1,13.382,253.538Z"
-                                                                        transform="translate(-11.45 -250.5)"></path>
-                                                                </g>
-                                                            </g>
-                                                        </g>
-                                                    </g>
-                                                </svg></div>
-                                        </div>
+
                                         <div class="filter-text">요금제: </div>
                                         <div class="filter-text" id="filter-text">8~9.9만원</div>
                                     </button></div>
@@ -221,77 +211,93 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="shop-list-products-wrapper d-block">
-                                <div class="container">
-                                    <div class="list-product"><span class="thumb"><img
-                                                src="https://narang-image.s3.ap-northeast-2.amazonaws.com/SM-G998N.jpg"
-                                                class="thumb__image" alt=""></span>
-                                        <div class="list-product__content">
-                                            <h3 class="title">갤럭시 S21 Ultra 256G</h3>
-                                            <h5 class="description">월 납부금 (24개월 할부)</h5>
-                                            <div class="category">
-                                                <div class="price"><img src="/assets/img/icons/icon_skt.png" class="img"
-                                                        alt=""><span class="text">130,376원</span></div>
-                                                <div class="price"><img src="/assets/img/icons/icon_kt.png" class="img"
-                                                        alt=""><span class="text">119,848원</span></div>
-                                                <div class="price"><img src="/assets/img/icons/icon_lgu.png" class="img"
-                                                        alt=""><span class="text">123,830원</span></div>
+                            <div class="omd-list-container-wrap">
+                                <a class="list-a-style">
+                                    <div class="list-detail-container">
+                                        <div class="container-large">
+                                            <div class="col">
+                                                <div class="listName border-bottom">
+                                                        <div>갤럭시 S21 Ultra 256G</div> 
+                                                </div>
+                                                <div class="d-flex justify-content-between">
+                                                    <div class="logo-image"><img
+                                                            src="/narang-mobile-publish/src/assets/img/icons/iphone.jpg"
+                                                            class="img-fluid-list" /></div>
+                                                    <div class="list-row-list">
+                                                        <div class="list-row-big-img">
+                                                            <img src="../assets/img/icons/icon_skt.svg" class="img"
+                                                                alt="">
+                                                            </div>
+                                                        <div class="list-row-big-img">
+                                                            <img src="../assets/img/icons/icon_kt.svg" class="img"
+                                                                alt="">
+                                                        </div>
+                                                        <div class="list-row-big-img">
+                                                            <img src="../assets/img/icons/icon_lgu.svg" class="img"
+                                                                alt="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="list-row-list">                                                       
+                                                        <div class="list-row-big-right"><span>월   </span>130,376원</div>
+                                                        <div class="list-row-big-right"><span>월   </span>119,848원</div>
+                                                        <div class="list-row-big-right"><span>월   </span>123,830원</div>
+                                                        <div class="list-row-small-right">(24개월 할부 기준)</div>
+                                                    </div>
+                                                </div>
+                                                
                                             </div>
-                                            <p></p>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="container">
-                                    <div class="list-product"><span class="thumb"><img
-                                                src="https://narang-image.s3.ap-northeast-2.amazonaws.com/SM-G998N.jpg"
-                                                class="thumb__image" alt=""></span>
-                                        <div class="list-product__content">
-                                            <h3 class="title">갤럭시 S21 Ultra 512G</h3>
-                                            <h5 class="description">월 납부금 (24개월 할부)</h5>
-                                            <div class="category">
-                                                <div class="price"><img src="/assets/img/icons/icon_skt.png" class="img"
-                                                        alt=""><span class="text">136,902원</span></div>
-                                                <div class="price"><img src="/assets/img/icons/icon_kt.png" class="img"
-                                                        alt=""><span class="text">126,374원</span></div>
-                                                <div class="price"><img src="/assets/img/icons/icon_lgu.png" class="img"
-                                                        alt=""><span class="text">130,356원</span></div>
+                                </a>
+                                <a class="list-a-style">
+                                    <div class="list-detail-container">
+                                        <div class="container-large">
+                                            <div class="col">
+                                                <div class="listName border-bottom">
+                                                        <div>갤럭시 S21 Ultra 256G</div> 
+                                                </div>
+                                                <div class="d-flex justify-content-between">
+                                                    <div class="logo-image"><img
+                                                            src="/narang-mobile-publish/src/assets/img/icons/iphone.jpg"
+                                                            class="img-fluid-list" /></div>
+                                                    <div class="list-row-list">
+                                                        <div class="list-row-big-img">
+                                                            <img src="../assets/img/icons/icon_skt.svg" class="img"
+                                                                alt="">
+                                                            </div>
+                                                        <div class="list-row-big-img">
+                                                            <img src="../assets/img/icons/icon_kt.svg" class="img"
+                                                                alt="">
+                                                        </div>
+                                                        <div class="list-row-big-img">
+                                                            <img src="../assets/img/icons/icon_lgu.svg" class="img"
+                                                                alt="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="list-row-list">                                                       
+                                                        <div class="list-row-big-right"><span>월   </span>130,376원</div>
+                                                        <div class="list-row-big-right"><span>월   </span>119,848원</div>
+                                                        <div class="list-row-big-right"><span>월   </span>123,830원</div>
+                                                        <div class="list-row-small-right">(24개월 할부 기준)</div>
+                                                    </div>
+                                                </div>
+                                                
                                             </div>
-                                            <p></p>
                                         </div>
                                     </div>
-                                </div>
-
-                                <div class="container">
-                                    <div class="list-product"><span class="thumb"><img
-                                                src="https://narang-image.s3.ap-northeast-2.amazonaws.com/SM-G991N.jpg"
-                                                class="thumb__image" alt=""></span>
-                                        <div class="list-product__content">
-                                            <h3 class="title">갤럭시 S21</h3>
-                                            <h5 class="description">월 납부금 (24개월 할부)</h5>
-                                            <div class="category">
-                                                <div class="price"><img src="/assets/img/icons/icon_skt.png" class="img"
-                                                        alt=""><span class="text">110,359원</span></div>
-                                                <div class="price"><img src="/assets/img/icons/icon_kt.png" class="img"
-                                                        alt=""><span class="text">103,904원</span></div>
-                                                <div class="price"><img src="/assets/img/icons/icon_lgu.png" class="img"
-                                                        alt=""><span class="text">103,813원</span></div>
-                                            </div>
-                                            <p></p>
-                                        </div>
-                                    </div>
-                                </div>
+                                </a>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </div>
-<footer include-html="/src/pages/footer.html"></footer>
+
+
+        <footer include-html="../pages/footer.html"></footer>
 </body>
 <script>
     includeHTML();
 </script>
+
 
 
 </html>

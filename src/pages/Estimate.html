@@ -3,22 +3,21 @@
 
 <head>
 
-    <head>
 
-        <meta charset="utf-8">
-        <link rel="icon" href="/favicon.ico">
-        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1">
-        <meta name="theme-color" content="#000000">
-        <meta name="description" content="휴대폰 정가 확인부터 견적서까지 바로 확인하세요. 통신 매장 가기전에 나랑살래">
-        <link rel="apple-touch-icon" href="/logo192.png">
-        <!--
+    <meta charset="utf-8">
+    <link rel="icon" href="/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1">
+    <meta name="theme-color" content="#000000">
+    <meta name="description" content="휴대폰 정가 확인부터 견적서까지 바로 확인하세요. 통신 매장 가기전에 나랑살래">
+    <link rel="apple-touch-icon" href="/logo192.png">
+    <!--
           manifest.json provides metadata used when your web app is installed on a
           user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
         -->
-        <link rel="manifest" href="/manifest.json">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
-            integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-        <!--
+    <link rel="manifest" href="/manifest.json">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+        integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <!--
           Notice the use of  in the tags above.
           It will be replaced with the URL of the `public` folder during the build.
           Only files inside the `public` folder can be referenced from the HTML.
@@ -28,79 +27,79 @@
           Learn how to configure a non-root public URL by running `npm run build`.
         -->
 
-        <!-- Google Tag Manager -->
-        <script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script>
-        <script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-T2KGLPC"></script>
-        <script>
-            (function (w, d, s, l, i) {
-                w[l] = w[l] || [];
-                w[l].push({
-                    'gtm.start': new Date().getTime(),
-                    event: 'gtm.js'
-                });
-                var f = d.getElementsByTagName(s)[0],
-                    j = d.createElement(s),
-                    dl = l != 'dataLayer' ? '&l=' + l : '';
-                j.async = true;
-                j.src =
-                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-                f.parentNode.insertBefore(j, f);
-            })(window, document, 'script', 'dataLayer', 'GTM-T2KGLPC');
-        </script>
-        <!-- End Google Tag Manager -->
-
-        <script type="text/javascript"
-            src="//dapi.kakao.com/v2/maps/sdk.js?appkey=bb911a165958ae1b708fe184b175a422&amp;libraries=services">
-        </script>
-        <script charset="UTF-8" src="https://t1.daumcdn.net/mapjsapi/js/main/4.4.1/kakao.js"></script>
-        <script charset="UTF-8" src="https://t1.daumcdn.net/mapjsapi/js/libs/services/1.0.2/services.js"></script>
-
-
-        <title>나랑살래</title>
-        <script charset="utf-8" src="/static/js/5.chunk.js"></script>
-        <script>
-            (function () {
-                var w = window;
-                if (w.ChannelIO) {
-                    return (window.console.error || window.console.log || function () {})(
-                        'ChannelIO script included twice.');
-                }
-                var ch = function () {
-                    ch.c(arguments);
-                };
-                ch.q = [];
-                ch.c = function (args) {
-                    ch.q.push(args);
-                };
-                w.ChannelIO = ch;
-
-                function l() {
-                    if (w.ChannelIOInitialized) {
-                        return;
-                    }
-                    w.ChannelIOInitialized = true;
-                    var s = document.createElement('script');
-                    s.type = 'text/javascript';
-                    s.async = true;
-                    s.src = 'https://cdn.channel.io/plugin/ch-plugin-web.js';
-                    s.charset = 'UTF-8';
-                    var x = document.getElementsByTagName('script')[0];
-                    x.parentNode.insertBefore(s, x);
-                }
-                if (document.readyState === 'complete') {
-                    l();
-                } else if (window.attachEvent) {
-                    window.attachEvent('onload', l);
-                } else {
-                    window.addEventListener('DOMContentLoaded', l, false);
-                    window.addEventListener('load', l, false);
-                }
-            })();
-            ChannelIO('boot', {
-                "pluginKey": "8cf05074-ca7e-4ed5-8057-72279b7b0e3c" //please fill with your plugin key
+    <!-- Google Tag Manager -->
+    <script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script>
+    <script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-T2KGLPC"></script>
+    <script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
             });
-        </script>
-    </head>
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-T2KGLPC');
+    </script>
+    <!-- End Google Tag Manager -->
+
+    <script type="text/javascript"
+        src="//dapi.kakao.com/v2/maps/sdk.js?appkey=bb911a165958ae1b708fe184b175a422&amp;libraries=services">
+    </script>
+    <script charset="UTF-8" src="https://t1.daumcdn.net/mapjsapi/js/main/4.4.1/kakao.js"></script>
+    <script charset="UTF-8" src="https://t1.daumcdn.net/mapjsapi/js/libs/services/1.0.2/services.js"></script>
+
+
+    <title>나랑살래</title>
+    <script charset="utf-8" src="/static/js/5.chunk.js"></script>
+    <script>
+        (function () {
+            var w = window;
+            if (w.ChannelIO) {
+                return (window.console.error || window.console.log || function () {})(
+                    'ChannelIO script included twice.');
+            }
+            var ch = function () {
+                ch.c(arguments);
+            };
+            ch.q = [];
+            ch.c = function (args) {
+                ch.q.push(args);
+            };
+            w.ChannelIO = ch;
+
+            function l() {
+                if (w.ChannelIOInitialized) {
+                    return;
+                }
+                w.ChannelIOInitialized = true;
+                var s = document.createElement('script');
+                s.type = 'text/javascript';
+                s.async = true;
+                s.src = 'https://cdn.channel.io/plugin/ch-plugin-web.js';
+                s.charset = 'UTF-8';
+                var x = document.getElementsByTagName('script')[0];
+                x.parentNode.insertBefore(s, x);
+            }
+            if (document.readyState === 'complete') {
+                l();
+            } else if (window.attachEvent) {
+                window.attachEvent('onload', l);
+            } else {
+                window.addEventListener('DOMContentLoaded', l, false);
+                window.addEventListener('load', l, false);
+            }
+        })();
+        ChannelIO('boot', {
+            "pluginKey": "8cf05074-ca7e-4ed5-8057-72279b7b0e3c" //please fill with your plugin key
+        });
+    </script>
+
     <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
     <script src="../pages/includeHTML.js"></script>
     <script src="../pages/nav.js"></script>
@@ -110,334 +109,330 @@
     <div id="root">
         <header include-html="../pages/header.html"></header>
 
-        <div id="root">
-            <div class="space-y--60"></div>
-            <div class="d-flex justify-content-center">
-                <div class="col-md-8 col-lg-5">
-                    <div class="body-wrapper space-pt--70 space-pb--15">
-                        <div class="estimate-container">
-                            <div class="estimate-content-header"><img src="../assets//img/icons/icon_skt.png"
-                                    class="img-fluid" alt="">
-                                <h4 style="align-self: center; margin-left: 8px;"> SKT 견적서</h4>
+
+        <div class="space-y--60"></div>
+        <div class="d-flex justify-content-center">
+            <div class="col-md-8 col-lg-5">
+                <div class="body-wrapper space-pt--70 space-pb--15">
+                    <div class="estimate-container">
+                        <div class="estimate-content-header"><img src="../assets//img/icons/icon_skt.png"
+                                class="img-fluid" alt="">
+                            <h4 style="align-self: center; margin-left: 8px;"> SKT 견적서</h4>
+                        </div>
+                        <div class="container-lg">
+                            <div class="border-bottom--thick border-dark" style="margin-bottom: 15px; text-align: end;">
+                                <span>기준일 : 2021.09.17</span></div>
+                            <div class="estimate-title">
+                                <div class="col d-flex justify-content-between"><span class="estimate-title-text"
+                                        style="font-weight: bold;">갤럭시 S21 Ultra 256G</span></div>
+                                <div class="col d-flex justify-content-between"><span class="estimate-title-text"
+                                        style="font-weight: bold;">최종 월 납부액</span><span
+                                        style="font-weight: bold;">130,376
+                                        원</span></div>
                             </div>
-                            <div class="container-lg">
-                                <div class="border-bottom--thick border-dark"
-                                    style="margin-bottom: 15px; text-align: end;">
-                                    <span>기준일 : 2021.09.17</span></div>
-                                <div class="estimate-title">
-                                    <div class="col d-flex justify-content-between"><span class="estimate-title-text"
-                                            style="font-weight: bold;">갤럭시 S21 Ultra 256G</span></div>
-                                    <div class="col d-flex justify-content-between"><span class="estimate-title-text"
-                                            style="font-weight: bold;">최종 월 납부액</span><span
-                                            style="font-weight: bold;">130,376
-                                            원</span></div>
+                            <div class="estimate-body">
+                                <div class="col d-flex justify-content-between" style="margin-top: 7px;">
+                                    <h7 class="estimate-body-text">출고가</h7>
+                                    <h7>1,452,000 원</h7>
                                 </div>
-                                <div class="estimate-body">
-                                    <div class="col d-flex justify-content-between" style="margin-top: 7px;">
-                                        <h7 class="estimate-body-text">출고가</h7>
-                                        <h7>1,452,000 원</h7>
-                                    </div>
-                                    <div class="col d-flex justify-content-between" style="margin-top: 7px;">
-                                        <div class="estimate-body-text">공시지원금<span> (-) </span></div>
-                                        <h7>450,000 원</h7>
-                                    </div>
-                                    <div class="col d-flex justify-content-between" style="margin-top: 7px;">
-                                        <div class="estimate-body-text">추가지원금<span> (-) </span></div>
-                                        <h7><input class="text-input" type="text" value="67500"
-                                                style="width: 70px; height: 25px; text-align: right;"><span> </span>원
-                                        </h7>
-                                    </div>
-                                    <div class="col d-flex justify-content-between" style="margin-top: 7px;">
-                                        <div class="estimate-body-text">매장지원금<span> (-) </span></div>
-                                        <h7><input class="text-input" type="text" value=""
-                                                style="width: 70px; height: 25px; text-align: right;"><span> </span>원
-                                        </h7>
-                                    </div>
-                                    <div class="col d-flex justify-content-between border-bottom--medium border-dark"
-                                        style="padding-bottom: 7px;"></div>
-                                    <div class="col d-flex justify-content-between" style="margin-top: 7px;">
-                                        <h7 class="estimate-body-text">할부원금</h7>
-                                        <h7>934,500 원</h7>
-                                    </div>
-                                    <div class="col d-flex justify-content-between" style="margin-top: 7px;">
-                                        <div class="estimate-body-text">할부이자<span> (+) </span></div>
-                                        <h7>58,512 원</h7>
-                                    </div>
-                                    <div class="col d-flex justify-content-between border-bottom--medium border-dark"
-                                        style="padding-bottom: 7px;"></div>
-                                    <div class="col d-flex justify-content-between" style="margin-top: 7px;"><span
-                                            class="estimate-body-text" style="font-weight: bold;">월 기기 납부액</span><span
-                                            style="font-weight: bold;">41,376 원</span></div>
+                                <div class="col d-flex justify-content-between" style="margin-top: 7px;">
+                                    <div class="estimate-body-text">공시지원금<span> (-) </span></div>
+                                    <h7>450,000 원</h7>
                                 </div>
-                                <div class="subscription-estimate-body">
-                                    <div class="col d-flex justify-content-between" style="margin-top: 7px;">
-                                        <h7 class="estimate-body-text">요금제명</h7><span style="text-align: end;"><span>5GX
-                                                프라임</span><br><span style="font-size: 11px;">(월 데이터 무제한)</span></span>
-                                    </div>
-                                    <div class="col d-flex justify-content-between" style="margin-top: 7px;">
-                                        <h7 class="estimate-body-text">기본료</h7>
-                                        <h7>89,000 원</h7>
-                                    </div>
-                                    <div class="col d-flex justify-content-between" style="margin-top: 7px;">
-                                        <h7 class="estimate-body-text">선택약정</h7>
-                                        <h7>0 원</h7>
-                                    </div>
-                                    <div class="col d-flex justify-content-between" style="margin-top: 7px;"><span
-                                            style="font-size: 11px; color: rgb(255, 0, 0); font-weight: lighter; display: inline-flex;">
-                                            <div style="height: 10px; width: 10px; fill: rgb(255, 0, 0);">
-                                                <div><svg xmlns="http://www.w3.org/2000/svg"
-                                                        xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
-                                                        id="Capa_1" x="0px" y="0px" viewBox="0 0 384.97 384.97"
-                                                        style="enable-background:new 0 0 384.97 384.97;"
-                                                        xml:space="preserve" class="injected-svg"
-                                                        data-src="/assets/img/icons/arrow_down.svg">
-                                                        <g>
-                                                            <g id="Chevron_Down_Circle">
-                                                                <path
-                                                                    d="M192.485,0C86.185,0,0,86.173,0,192.485c0,106.3,86.185,192.485,192.485,192.485    c106.312,0,192.485-86.185,192.485-192.485C384.97,86.173,298.797,0,192.485,0z M192.485,360.909    c-92.874,0-168.424-75.55-168.424-168.424S99.611,24.061,192.485,24.061s168.797,75.55,168.797,168.424    S285.359,360.909,192.485,360.909z">
-                                                                </path>
-                                                                <path
-                                                                    d="M268.276,149.092l-75.61,74.528l-75.61-74.54c-4.74-4.704-12.439-4.704-17.191,0c-4.74,4.704-4.74,12.319,0,17.011    l84.2,83.009c4.62,4.572,12.56,4.584,17.191,0l84.2-82.997c4.74-4.704,4.74-12.319,0-17.011    C280.715,144.4,273.028,144.4,268.276,149.092z">
-                                                                </path>
-                                                            </g>
-                                                            <g>
-                                                            </g>
-                                                            <g>
-                                                            </g>
-                                                            <g>
-                                                            </g>
-                                                            <g>
-                                                            </g>
-                                                            <g>
-                                                            </g>
-                                                            <g>
-                                                            </g>
-                                                        </g>
-                                                        <g>
-                                                        </g>
-                                                        <g>
-                                                        </g>
-                                                        <g>
-                                                        </g>
-                                                        <g>
-                                                        </g>
-                                                        <g>
-                                                        </g>
-                                                        <g>
-                                                        </g>
-                                                        <g>
-                                                        </g>
-                                                        <g>
-                                                        </g>
-                                                        <g>
-                                                        </g>
-                                                        <g>
-                                                        </g>
-                                                        <g>
-                                                        </g>
-                                                        <g>
-                                                        </g>
-                                                        <g>
-                                                        </g>
-                                                        <g>
-                                                        </g>
-                                                        <g>
-                                                        </g>
-                                                    </svg></div>
-                                            </div><span style="margin-left: 5px;">공시지원금 선택시 선택약정 할인이 없습니다.</span>
-                                        </span></div>
-                                    <div class="col d-flex justify-content-between"><span
-                                            style="font-size: 11px; color: rgb(255, 0, 0); font-weight: lighter; display: inline-flex;">
-                                            <div style="height: 10px; width: 10px; fill: rgb(255, 0, 0);">
-                                                <div><svg xmlns="http://www.w3.org/2000/svg"
-                                                        xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
-                                                        id="Capa_1" x="0px" y="0px" viewBox="0 0 384.97 384.97"
-                                                        style="enable-background:new 0 0 384.97 384.97;"
-                                                        xml:space="preserve" class="injected-svg"
-                                                        data-src="/assets/img/icons/arrow_down.svg">
-                                                        <g>
-                                                            <g id="Chevron_Down_Circle">
-                                                                <path
-                                                                    d="M192.485,0C86.185,0,0,86.173,0,192.485c0,106.3,86.185,192.485,192.485,192.485    c106.312,0,192.485-86.185,192.485-192.485C384.97,86.173,298.797,0,192.485,0z M192.485,360.909    c-92.874,0-168.424-75.55-168.424-168.424S99.611,24.061,192.485,24.061s168.797,75.55,168.797,168.424    S285.359,360.909,192.485,360.909z">
-                                                                </path>
-                                                                <path
-                                                                    d="M268.276,149.092l-75.61,74.528l-75.61-74.54c-4.74-4.704-12.439-4.704-17.191,0c-4.74,4.704-4.74,12.319,0,17.011    l84.2,83.009c4.62,4.572,12.56,4.584,17.191,0l84.2-82.997c4.74-4.704,4.74-12.319,0-17.011    C280.715,144.4,273.028,144.4,268.276,149.092z">
-                                                                </path>
-                                                            </g>
-                                                            <g>
-                                                            </g>
-                                                            <g>
-                                                            </g>
-                                                            <g>
-                                                            </g>
-                                                            <g>
-                                                            </g>
-                                                            <g>
-                                                            </g>
-                                                            <g>
-                                                            </g>
-                                                        </g>
-                                                        <g>
-                                                        </g>
-                                                        <g>
-                                                        </g>
-                                                        <g>
-                                                        </g>
-                                                        <g>
-                                                        </g>
-                                                        <g>
-                                                        </g>
-                                                        <g>
-                                                        </g>
-                                                        <g>
-                                                        </g>
-                                                        <g>
-                                                        </g>
-                                                        <g>
-                                                        </g>
-                                                        <g>
-                                                        </g>
-                                                        <g>
-                                                        </g>
-                                                        <g>
-                                                        </g>
-                                                        <g>
-                                                        </g>
-                                                        <g>
-                                                        </g>
-                                                        <g>
-                                                        </g>
-                                                    </svg></div>
-                                            </div><span style="margin-left: 5px;">가족, 결합할인은 매장에서 적용 할 수 있습니다.</span>
-                                        </span></div>
-                                    <div class="col d-flex justify-content-between border-bottom--medium border-dark"
-                                        style="padding-bottom: 7px;"></div>
-                                    <div class="col d-flex justify-content-between" style="margin-top: 7px;"><span
-                                            class="estimate-body-text" style="font-weight: bold;">월 요금 납부액</span><span
-                                            style="font-weight: bold;">89,000 원</span></div>
+                                <div class="col d-flex justify-content-between" style="margin-top: 7px;">
+                                    <div class="estimate-body-text">추가지원금<span> (-) </span></div>
+                                    <h7><input class="text-input" type="text" value="67500"
+                                            style="width: 70px; height: 25px; text-align: right;"><span> </span>원
+                                    </h7>
                                 </div>
+                                <div class="col d-flex justify-content-between" style="margin-top: 7px;">
+                                    <div class="estimate-body-text">매장지원금<span> (-) </span></div>
+                                    <h7><input class="text-input" type="text" value=""
+                                            style="width: 70px; height: 25px; text-align: right;"><span> </span>원
+                                    </h7>
+                                </div>
+                                <div class="col d-flex justify-content-between border-bottom--medium border-dark"
+                                    style="padding-bottom: 7px;"></div>
+                                <div class="col d-flex justify-content-between" style="margin-top: 7px;">
+                                    <h7 class="estimate-body-text">할부원금</h7>
+                                    <h7>934,500 원</h7>
+                                </div>
+                                <div class="col d-flex justify-content-between" style="margin-top: 7px;">
+                                    <div class="estimate-body-text">할부이자<span> (+) </span></div>
+                                    <h7>58,512 원</h7>
+                                </div>
+                                <div class="col d-flex justify-content-between border-bottom--medium border-dark"
+                                    style="padding-bottom: 7px;"></div>
+                                <div class="col d-flex justify-content-between" style="margin-top: 7px;"><span
+                                        class="estimate-body-text" style="font-weight: bold;">월 기기 납부액</span><span
+                                        style="font-weight: bold;">41,376 원</span></div>
                             </div>
-                            <div class="memo-container border-bottom--thick border-dark">
-                                <div class="estimate-body-memo border-0">
-                                    <div class="col d-flex justify-content-between" style="margin-top: 7px;">
-                                        <h7 class="estimate-body-text">추가 메모</h7>
-                                    </div>
-                                    <div class="" style="margin-top: 7px; text-align: center;"><textarea
-                                            class="text-input" type="text"></textarea></div>
+                            <div class="subscription-estimate-body">
+                                <div class="col d-flex justify-content-between" style="margin-top: 7px;">
+                                    <h7 class="estimate-body-text">요금제명</h7><span style="text-align: end;"><span>5GX
+                                            프라임</span><br><span style="font-size: 11px;">(월 데이터 무제한)</span></span>
                                 </div>
+                                <div class="col d-flex justify-content-between" style="margin-top: 7px;">
+                                    <h7 class="estimate-body-text">기본료</h7>
+                                    <h7>89,000 원</h7>
+                                </div>
+                                <div class="col d-flex justify-content-between" style="margin-top: 7px;">
+                                    <h7 class="estimate-body-text">선택약정</h7>
+                                    <h7>0 원</h7>
+                                </div>
+                                <div class="col d-flex justify-content-between" style="margin-top: 7px;"><span
+                                        style="font-size: 11px; color: rgb(255, 0, 0); font-weight: lighter; display: inline-flex;">
+                                        <div style="height: 10px; width: 10px; fill: rgb(255, 0, 0);">
+                                            <div><svg xmlns="http://www.w3.org/2000/svg"
+                                                    xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1"
+                                                    x="0px" y="0px" viewBox="0 0 384.97 384.97"
+                                                    style="enable-background:new 0 0 384.97 384.97;"
+                                                    xml:space="preserve" class="injected-svg"
+                                                    data-src="/assets/img/icons/arrow_down.svg">
+                                                    <g>
+                                                        <g id="Chevron_Down_Circle">
+                                                            <path
+                                                                d="M192.485,0C86.185,0,0,86.173,0,192.485c0,106.3,86.185,192.485,192.485,192.485    c106.312,0,192.485-86.185,192.485-192.485C384.97,86.173,298.797,0,192.485,0z M192.485,360.909    c-92.874,0-168.424-75.55-168.424-168.424S99.611,24.061,192.485,24.061s168.797,75.55,168.797,168.424    S285.359,360.909,192.485,360.909z">
+                                                            </path>
+                                                            <path
+                                                                d="M268.276,149.092l-75.61,74.528l-75.61-74.54c-4.74-4.704-12.439-4.704-17.191,0c-4.74,4.704-4.74,12.319,0,17.011    l84.2,83.009c4.62,4.572,12.56,4.584,17.191,0l84.2-82.997c4.74-4.704,4.74-12.319,0-17.011    C280.715,144.4,273.028,144.4,268.276,149.092z">
+                                                            </path>
+                                                        </g>
+                                                        <g>
+                                                        </g>
+                                                        <g>
+                                                        </g>
+                                                        <g>
+                                                        </g>
+                                                        <g>
+                                                        </g>
+                                                        <g>
+                                                        </g>
+                                                        <g>
+                                                        </g>
+                                                    </g>
+                                                    <g>
+                                                    </g>
+                                                    <g>
+                                                    </g>
+                                                    <g>
+                                                    </g>
+                                                    <g>
+                                                    </g>
+                                                    <g>
+                                                    </g>
+                                                    <g>
+                                                    </g>
+                                                    <g>
+                                                    </g>
+                                                    <g>
+                                                    </g>
+                                                    <g>
+                                                    </g>
+                                                    <g>
+                                                    </g>
+                                                    <g>
+                                                    </g>
+                                                    <g>
+                                                    </g>
+                                                    <g>
+                                                    </g>
+                                                    <g>
+                                                    </g>
+                                                    <g>
+                                                    </g>
+                                                </svg></div>
+                                        </div><span style="margin-left: 5px;">공시지원금 선택시 선택약정 할인이 없습니다.</span>
+                                    </span></div>
+                                <div class="col d-flex justify-content-between"><span
+                                        style="font-size: 11px; color: rgb(255, 0, 0); font-weight: lighter; display: inline-flex;">
+                                        <div style="height: 10px; width: 10px; fill: rgb(255, 0, 0);">
+                                            <div><svg xmlns="http://www.w3.org/2000/svg"
+                                                    xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1"
+                                                    x="0px" y="0px" viewBox="0 0 384.97 384.97"
+                                                    style="enable-background:new 0 0 384.97 384.97;"
+                                                    xml:space="preserve" class="injected-svg"
+                                                    data-src="/assets/img/icons/arrow_down.svg">
+                                                    <g>
+                                                        <g id="Chevron_Down_Circle">
+                                                            <path
+                                                                d="M192.485,0C86.185,0,0,86.173,0,192.485c0,106.3,86.185,192.485,192.485,192.485    c106.312,0,192.485-86.185,192.485-192.485C384.97,86.173,298.797,0,192.485,0z M192.485,360.909    c-92.874,0-168.424-75.55-168.424-168.424S99.611,24.061,192.485,24.061s168.797,75.55,168.797,168.424    S285.359,360.909,192.485,360.909z">
+                                                            </path>
+                                                            <path
+                                                                d="M268.276,149.092l-75.61,74.528l-75.61-74.54c-4.74-4.704-12.439-4.704-17.191,0c-4.74,4.704-4.74,12.319,0,17.011    l84.2,83.009c4.62,4.572,12.56,4.584,17.191,0l84.2-82.997c4.74-4.704,4.74-12.319,0-17.011    C280.715,144.4,273.028,144.4,268.276,149.092z">
+                                                            </path>
+                                                        </g>
+                                                        <g>
+                                                        </g>
+                                                        <g>
+                                                        </g>
+                                                        <g>
+                                                        </g>
+                                                        <g>
+                                                        </g>
+                                                        <g>
+                                                        </g>
+                                                        <g>
+                                                        </g>
+                                                    </g>
+                                                    <g>
+                                                    </g>
+                                                    <g>
+                                                    </g>
+                                                    <g>
+                                                    </g>
+                                                    <g>
+                                                    </g>
+                                                    <g>
+                                                    </g>
+                                                    <g>
+                                                    </g>
+                                                    <g>
+                                                    </g>
+                                                    <g>
+                                                    </g>
+                                                    <g>
+                                                    </g>
+                                                    <g>
+                                                    </g>
+                                                    <g>
+                                                    </g>
+                                                    <g>
+                                                    </g>
+                                                    <g>
+                                                    </g>
+                                                    <g>
+                                                    </g>
+                                                    <g>
+                                                    </g>
+                                                </svg></div>
+                                        </div><span style="margin-left: 5px;">가족, 결합할인은 매장에서 적용 할 수 있습니다.</span>
+                                    </span></div>
+                                <div class="col d-flex justify-content-between border-bottom--medium border-dark"
+                                    style="padding-bottom: 7px;"></div>
+                                <div class="col d-flex justify-content-between" style="margin-top: 7px;"><span
+                                        class="estimate-body-text" style="font-weight: bold;">월 요금 납부액</span><span
+                                        style="font-weight: bold;">89,000 원</span></div>
                             </div>
-                            <div class="container-lg">
-                                <div class="shop-title">
-                                    <div color="#0F4C81">
-                                        <div><svg xmlns="http://www.w3.org/2000/svg"
-                                                xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1"
-                                                x="0px" y="0px" width="30px" height="38px" viewBox="0 0 39.64 39.639"
-                                                style="enable-background:new 0 0 39.64 39.639;" xml:space="preserve"
-                                                fill="#0F4C81" class="injected-svg"
-                                                data-src="/assets/img/icons/open-store.svg">
-                                                <g>
-                                                    <path
-                                                        d="M9.591,22.065c-0.873,0-1.35,0.52-1.35,1.422v2.938c0,0.904,0.477,1.422,1.35,1.422c0.871,0,1.349-0.518,1.349-1.422   v-2.938C10.939,22.584,10.463,22.065,9.591,22.065z M10.05,26.482c0,0.403-0.179,0.558-0.461,0.558   c-0.283,0-0.459-0.152-0.459-0.558v-3.054c0-0.402,0.176-0.558,0.459-0.558c0.282,0,0.461,0.153,0.461,0.558V26.482z    M12.822,22.131h-1.309v5.651h0.889v-2.124h0.42c0.889,0,1.324-0.49,1.324-1.396v-0.734C14.146,22.623,13.711,22.131,12.822,22.131   z M13.258,24.318c0,0.403-0.152,0.533-0.437,0.533h-0.42v-1.914h0.42c0.283,0,0.437,0.13,0.437,0.532V24.318z M14.599,22.131h2.424   v0.808h-1.535v1.575h1.221v0.806h-1.221v1.655h1.535v0.808h-2.424V22.131z M19.591,22.131h0.791v5.651H19.47l-1.105-4.095v4.095   h-0.8v-5.651h1.114l0.912,3.383V22.131z M39.268,9.042l-6.41-5.167c-0.179-0.144-0.398-0.222-0.628-0.222H7.41   c-0.229,0-0.449,0.078-0.628,0.222l-6.41,5.167c-0.329,0.266-0.456,0.712-0.315,1.111C0.199,10.552,0.577,10.82,1,10.82h1.486   v23.167c0,1.104,0.896,2,2,2h30.667c1.104,0,2-0.896,2-2V10.82h1.486c0.424,0,0.802-0.268,0.943-0.667   C39.724,9.754,39.597,9.307,39.268,9.042z M33.153,31.987h-2.166v-8.334c0-0.828-0.672-1.5-1.5-1.5h-5.335   c-0.828,0-1.5,0.672-1.5,1.5v8.334H6.486V12.653h0.758v1.471c0,3.186,2.07,3.529,2.961,3.529c0.891,0,2.963-0.344,2.963-3.529   v-1.471h0.486v1.471c0,3.186,2.07,3.529,2.961,3.529s2.961-0.344,2.961-3.529v-1.471h0.486v1.471c0,3.186,2.072,3.529,2.963,3.529   c0.892,0,2.961-0.344,2.961-3.529v-1.471h0.486v1.471c0,3.186,2.072,3.529,2.963,3.529s2.961-0.344,2.961-3.529v-1.471h0.758   V31.987L33.153,31.987z">
-                                                    </path>
-                                                </g>
-                                                <g>
-                                                </g>
-                                                <g>
-                                                </g>
-                                                <g>
-                                                </g>
-                                                <g>
-                                                </g>
-                                                <g>
-                                                </g>
-                                                <g>
-                                                </g>
-                                                <g>
-                                                </g>
-                                                <g>
-                                                </g>
-                                                <g>
-                                                </g>
-                                                <g>
-                                                </g>
-                                                <g>
-                                                </g>
-                                                <g>
-                                                </g>
-                                                <g>
-                                                </g>
-                                                <g>
-                                                </g>
-                                                <g>
-                                                </g>
-                                            </svg></div>
-                                    </div>
-                                    <h6 class="h6">구매 매장</h6>
+                        </div>
+                        <div class="memo-container border-bottom--thick border-dark">
+                            <div class="estimate-body-memo border-0">
+                                <div class="col d-flex justify-content-between" style="margin-top: 7px;">
+                                    <h7 class="estimate-body-text">추가 메모</h7>
                                 </div>
-                                <div class="shop-body">
-                                    <div class="d-flex justify-content-between" style="padding-bottom: 7px;">
-                                        <h7 class="p-2 flex-shrink-1 w-25">이름</h7>
-                                        <div class="address-container"><input class="address-name" type="text" value="">
-                                        </div>
+                                <div class="" style="margin-top: 7px; text-align: center;"><textarea class="text-input"
+                                        type="text"></textarea></div>
+                            </div>
+                        </div>
+                        <div class="container-lg">
+                            <div class="shop-title">
+                                <div color="#0F4C81">
+                                    <div><svg xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px"
+                                            y="0px" width="30px" height="38px" viewBox="0 0 39.64 39.639"
+                                            style="enable-background:new 0 0 39.64 39.639;" xml:space="preserve"
+                                            fill="#0F4C81" class="injected-svg"
+                                            data-src="/assets/img/icons/open-store.svg">
+                                            <g>
+                                                <path
+                                                    d="M9.591,22.065c-0.873,0-1.35,0.52-1.35,1.422v2.938c0,0.904,0.477,1.422,1.35,1.422c0.871,0,1.349-0.518,1.349-1.422   v-2.938C10.939,22.584,10.463,22.065,9.591,22.065z M10.05,26.482c0,0.403-0.179,0.558-0.461,0.558   c-0.283,0-0.459-0.152-0.459-0.558v-3.054c0-0.402,0.176-0.558,0.459-0.558c0.282,0,0.461,0.153,0.461,0.558V26.482z    M12.822,22.131h-1.309v5.651h0.889v-2.124h0.42c0.889,0,1.324-0.49,1.324-1.396v-0.734C14.146,22.623,13.711,22.131,12.822,22.131   z M13.258,24.318c0,0.403-0.152,0.533-0.437,0.533h-0.42v-1.914h0.42c0.283,0,0.437,0.13,0.437,0.532V24.318z M14.599,22.131h2.424   v0.808h-1.535v1.575h1.221v0.806h-1.221v1.655h1.535v0.808h-2.424V22.131z M19.591,22.131h0.791v5.651H19.47l-1.105-4.095v4.095   h-0.8v-5.651h1.114l0.912,3.383V22.131z M39.268,9.042l-6.41-5.167c-0.179-0.144-0.398-0.222-0.628-0.222H7.41   c-0.229,0-0.449,0.078-0.628,0.222l-6.41,5.167c-0.329,0.266-0.456,0.712-0.315,1.111C0.199,10.552,0.577,10.82,1,10.82h1.486   v23.167c0,1.104,0.896,2,2,2h30.667c1.104,0,2-0.896,2-2V10.82h1.486c0.424,0,0.802-0.268,0.943-0.667   C39.724,9.754,39.597,9.307,39.268,9.042z M33.153,31.987h-2.166v-8.334c0-0.828-0.672-1.5-1.5-1.5h-5.335   c-0.828,0-1.5,0.672-1.5,1.5v8.334H6.486V12.653h0.758v1.471c0,3.186,2.07,3.529,2.961,3.529c0.891,0,2.963-0.344,2.963-3.529   v-1.471h0.486v1.471c0,3.186,2.07,3.529,2.961,3.529s2.961-0.344,2.961-3.529v-1.471h0.486v1.471c0,3.186,2.072,3.529,2.963,3.529   c0.892,0,2.961-0.344,2.961-3.529v-1.471h0.486v1.471c0,3.186,2.072,3.529,2.963,3.529s2.961-0.344,2.961-3.529v-1.471h0.758   V31.987L33.153,31.987z">
+                                                </path>
+                                            </g>
+                                            <g>
+                                            </g>
+                                            <g>
+                                            </g>
+                                            <g>
+                                            </g>
+                                            <g>
+                                            </g>
+                                            <g>
+                                            </g>
+                                            <g>
+                                            </g>
+                                            <g>
+                                            </g>
+                                            <g>
+                                            </g>
+                                            <g>
+                                            </g>
+                                            <g>
+                                            </g>
+                                            <g>
+                                            </g>
+                                            <g>
+                                            </g>
+                                            <g>
+                                            </g>
+                                            <g>
+                                            </g>
+                                            <g>
+                                            </g>
+                                        </svg></div>
+                                </div>
+                                <h6 class="h6">구매 매장</h6>
+                            </div>
+                            <div class="shop-body">
+                                <div class="d-flex justify-content-between" style="padding-bottom: 7px;">
+                                    <h7 class="p-2 flex-shrink-1 w-25">이름</h7>
+                                    <div class="address-container"><input class="address-name" type="text" value="">
                                     </div>
-                                    <div class="d-flex justify-content-between" style="padding-bottom: 7px;">
-                                        <h7 class="p-2 flex-lg-shrink-1 w-25">주소</h7>
-                                        <div class="address-container"><input class="address-postCode" type="text"
-                                                value=""><button id="address-search-button" class="address-search"
-                                                style="margin-left: 5px;">주소검색</button></div>
+                                </div>
+                                <div class="d-flex justify-content-between" style="padding-bottom: 7px;">
+                                    <h7 class="p-2 flex-lg-shrink-1 w-25">주소</h7>
+                                    <div class="address-container"><input class="address-postCode" type="text"
+                                            value=""><button id="address-search-button" class="address-search"
+                                            style="margin-left: 5px;">주소검색</button></div>
+                                </div>
+                                <div class="d-flex justify-content-between" style="padding-bottom: 7px;">
+                                    <h7 class="p-2 flex-lg-shrink-1 w-25"> </h7>
+                                    <div class="address-container"><input class="address-detail" type="text" value="">
                                     </div>
-                                    <div class="d-flex justify-content-between" style="padding-bottom: 7px;">
-                                        <h7 class="p-2 flex-lg-shrink-1 w-25"> </h7>
-                                        <div class="address-container"><input class="address-detail" type="text"
-                                                value=""></div>
-                                    </div>
-                                    <div class="d-flex justify-content-between" style="padding-bottom: 7px;">
-                                        <h7 class="p-2 flex-lg-shrink-1 w-25"> </h7>
-                                        <div class="address-container"><input class="address-detail1" type="text"
-                                                value="">
-                                        </div>
+                                </div>
+                                <div class="d-flex justify-content-between" style="padding-bottom: 7px;">
+                                    <h7 class="p-2 flex-lg-shrink-1 w-25"> </h7>
+                                    <div class="address-container"><input class="address-detail1" type="text" value="">
                                     </div>
                                 </div>
                             </div>
-                            <div class="memo-container border-bottom--thick border-dark"></div>
-                            <div class="memo-container">
-                                <div class="estimate-body-memo border-0">
-                                    <div class="" style="margin-top: 7px; text-align: center;"><button
-                                            class="share-button">
-                                            <div
-                                                style="color: rgb(15, 76, 129); font-weight: bold; display: inline-flex;">
-                                                <span>견적서 생성하기</span>
-                                                <div style="padding-left: 10px; fill: rgb(15, 76, 129);">
-                                                    <div>
-                                                        <div><svg xmlns="http://www.w3.org/2000/svg" width="16.2"
-                                                                height="6" viewBox="0 0 16.2 6" class="injected-svg"
-                                                                data-src="/assets/img/icons/arrow-right.svg"
-                                                                xmlns:xlink="http://www.w3.org/1999/xlink">
-                                                                <g transform="translate(13 -85.333)">
-                                                                    <g transform="translate(0 85.333)">
-                                                                        <path
-                                                                            d="M10.145,88.2,7.333,85.388a.187.187,0,1,0-.265.265L9.56,88.145H-5.812A.187.187,0,0,0-6,88.333a.187.187,0,0,0,.188.188H9.56L7.067,91.013a.187.187,0,1,0,.265.265l2.813-2.812A.187.187,0,0,0,10.145,88.2Z"
-                                                                            transform="translate(-7 -85.333)"></path>
-                                                                    </g>
+                        </div>
+                        <div class="memo-container border-bottom--thick border-dark"></div>
+                        <div class="memo-container">
+                            <div class="estimate-body-memo border-0">
+                                <div class="" style="margin-top: 7px; text-align: center;"><button class="share-button">
+                                        <div style="color: rgb(15, 76, 129); font-weight: bold; display: inline-flex;">
+                                            <span>견적서 생성하기</span>
+                                            <div style="padding-left: 10px; fill: rgb(15, 76, 129);">
+                                                <div>
+                                                    <div><svg xmlns="http://www.w3.org/2000/svg" width="16.2" height="6"
+                                                            viewBox="0 0 16.2 6" class="injected-svg"
+                                                            data-src="/assets/img/icons/arrow-right.svg"
+                                                            xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                            <g transform="translate(13 -85.333)">
+                                                                <g transform="translate(0 85.333)">
+                                                                    <path
+                                                                        d="M10.145,88.2,7.333,85.388a.187.187,0,1,0-.265.265L9.56,88.145H-5.812A.187.187,0,0,0-6,88.333a.187.187,0,0,0,.188.188H9.56L7.067,91.013a.187.187,0,1,0,.265.265l2.813-2.812A.187.187,0,0,0,10.145,88.2Z"
+                                                                        transform="translate(-7 -85.333)"></path>
                                                                 </g>
-                                                            </svg></div>
-                                                    </div>
+                                                            </g>
+                                                        </svg></div>
                                                 </div>
                                             </div>
-                                        </button></div>
-                                </div>
+                                        </div>
+                                    </button></div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-
-
-
-
-        <footer include-html="../pages/footer.html"></footer>
+    </div>
 </body>
+
+
+
+    <footer include-html="../pages/footer.html"></footer>
+
 <script>
     includeHTML();
 </script>

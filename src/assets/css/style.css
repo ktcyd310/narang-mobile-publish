@@ -3885,7 +3885,7 @@ pre code {
     }
 }
 
-@media (min-width: 1250px) {
+@media (min-width: 1200px) {
     .col-xl {
         flex-basis: 0;
         flex-grow: 1;
@@ -6829,7 +6829,7 @@ input[type="button"].btn-block {
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    padding: 0.5rem 1rem;
+   
 }
 
 .navbar .container,
@@ -16587,6 +16587,7 @@ header .header-logo {
     align-items: center;
     width: 90px;
     margin: 0px 10px;
+    color: black;
 }
 
 .row-small {
@@ -16868,7 +16869,7 @@ input:focus {
 }
 
 .omd-detail-container {
-    margin: 10px;
+    margin: 5px;
     padding-top: 5px;
     padding-bottom: 5px;
     border-width: 1px;
@@ -16883,7 +16884,8 @@ input:focus {
     background-color: #f9f9f9;
     font-size: small;
     margin-bottom: 2px;
-    padding: 0.5px;
+    padding:0.5px;
+    
 }
 
 .oem-detail-container {
@@ -19251,6 +19253,7 @@ input:focus {
     font-size: small;
     margin-bottom: 2px;
     padding: 2px;
+    margin-top: 40px;
 }
 
 .listName {
@@ -19382,6 +19385,7 @@ input:focus {
     font-weight: bold;
     margin-bottom: 10px;
     padding: 5px;
+    color: black;
 
 }
 
@@ -19507,7 +19511,7 @@ input:focus {
 }
 
 .nav-link {
-    line-height: 80px;
+    line-height: 50px;
 }
 
 .nav-link:hover+.nav-dropdown-content {
@@ -19976,14 +19980,20 @@ input:focus {
 
     .narang-logo-img {
         width: 200px;
-
+        max-height:30px;
         margin-left: 0%;
+ 
+       
+        
+
     }
 
     .header-mention {
         width: 200px;
         align-items: center;
-        height: 80px;
+        height: 30px;
+        margin-top: 10px;
+        margin-bottom: 10px;
     }
 
 
@@ -19992,5 +20002,8 @@ input:focus {
         .narang-logo-img {
             width: 200px;
             margin-left: 0;
+            height:30px;
+            
+
 
         }
